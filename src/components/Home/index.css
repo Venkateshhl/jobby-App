@@ -1,0 +1,78 @@
+.main-home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  font-family: 'Roboto';
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 89%;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.home-heading {
+  color: white;
+  font-size: 50px;
+}
+
+.home-description {
+  color: #f8fafc;
+  font-size: 30px;
+  line-height: 1.7;
+}
+
+.home-button {
+  width: 100px;
+  height: 46px;
+  color: white;
+  font-size: 15px;
+  padding: 6px;
+  background-color: #4f46e5;
+  border-style: none;
+  outline: none;
+  margin-top: 23px;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 576px) {
+  .home-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+    background-size: cover;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .home-content {
+    width: 100%;
+  }
+  .home-heading {
+    font-size: 29px;
+  }
+  .home-description {
+    font-size: 13px;
+  }
+  .home-button {
+    width: 80px;
+    height: 37px;
+    font-size: 15px;
+  }
+}
